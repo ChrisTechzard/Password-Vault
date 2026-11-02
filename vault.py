@@ -7,7 +7,7 @@ import string
 from pathlib import Path #working with our vault file
 
 from cryptography.fernet import Fernet, InvalidToken #encryption and decryption
-from cryptography.hazmat.primitives.kdf.scrypt import Scrypt #turns our master password into an cryption key
+from cryptography.hazmat.primitives.kdf.scrypt import Scrypt #turns our master password into an encryption key
 
 VAULT_FILE = Path("vault.json")
 SALT_SIZE = 16
